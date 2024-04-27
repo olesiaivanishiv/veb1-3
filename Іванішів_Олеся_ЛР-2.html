@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="8_2.css">
+    <title>Ветеринарна клініка "Лапка"</title>
+</head>
+<body>
+
+    <h1>Ветеринарна клініка "Лапка"</h1>       
+
+    <nav>
+        <ul>
+            <li><a href="https://animal-id.net/ua/faq">AnimalID</a></li>
+            <li><a href="https://www.dlab.com.ua/rubrika/131">Послуги</a></li>
+            <li><a href="https://www.dlab.com.ua/rubrika/131">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="openLink()">Відкрити посилання</button>
+    <button id="close">Закрити вікно</button>
+
+
+    <h6 class="work"><u>Ласкаво просимо до ветеринарної клініки "Лапка". Ми надаємо повний спектр послуг для вашого улюбленця.</u></h6>
+
+    <h3 class="work"><q>Лікарі рятують людей, а ветеринари — людство</q></h3>
+
+    <p><mark>Дата заснування клініки: <time>18.02.2005</time></mark></p>
+
+    <div class="flex-container">
+        <div class="flex-item"><img src="C:/Users/User/Desktop/Olesya/Веб/котик.jpg"></div>
+        <div class="flex-item"><img src="C:/Users/User/Desktop/Olesya/Веб/котик.jpg"></div>
+        <div class="flex-item"><img src="C:/Users/User/Desktop/Olesya/Веб/котик.jpg"></div>
+    </div>
+
+    
+     <h2 class="work"><i>Наші послуги</i></h2>
+
+    <ul>
+        <li>Вакцинація та профілактика</li>
+        <li>Діагностика захворювань</li>
+        <li>Хірургічні втручання</li>
+    </ul>
+
+     <div class="column-container">
+        <div class="column">
+            <h3>Контактна інформація</h3>
+            <p>+380 123 456 789<sub> (пишіть на Тelegram або введіть ваш номер і ми вам зателефонуємо) </sub></p>
+            <form action="/submit" method="post">
+              <label for="birthday">Дата:</label><br>
+              <input type="date" id="data" name="data"><br>
+              
+              <p>Тваринка:</p>
+              <input type="checkbox" id="cat" name="animal" value="cat">
+              <label for="cat">Кіт</label><br>
+              <input type="checkbox" id="dog" name="animal" value="dog">
+              <label for="dog">Собака</label><br>
+              <input type="checkbox" id="another" name="animal" value="another">
+              <label for="another">Інша</label><br>
+            </form>
+
+            <form action="#" method="post">
+                <label for="phone">Ваш номер телефону:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="0999999999" title="Номер телефону повинен містити 10 цифр">
+                <input type="hidden" name="userId" value="12345">
+                <button type="submit" onclick="alert('Дякуємо, що обрали нас!')">Записатись на прийом</button>
+            </form>
+        </div>
+        <div class="column">
+            <table border="1">            
+                <caption>Графік роботи</caption>
+                <tr>
+                    <th>День тижня</th>
+                    <th>Час роботи</th>
+                </tr>
+                <tr>
+                    <td>Понеділок - П'ятниця</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Субота</td>
+                    <td>9:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Неділя</td>
+                    <td>10:00 - 15:00</td>
+                </tr>
+            </table>
+           
+            <p class="rtl"></p>
+        </div>
+    </div>
+
+    <progress value="50" max="100"></progress>
+
+
+     <h3 class="work">Оберіть лікаря</h3>
+     <select class="custom-select">
+        <option value="volvo">Бойко Ірина</option>
+        <option value="saab">Коваль Тарас</option>
+        <option value="mercedes">Михайленко Назар</option>
+        <option value="audi">Мельник Роман</option>
+    </select>
+
+
+    <h3 class="work">Вакцинація тварин</h3>
+
+    <p class="break-word">Акцентуємо Вашу увагу на тому, що вакцинація тварин – важлива процедура у житті ваших вихованців. Запам’ятайте, вакцинація завжди дешевша і безпечніша, ніж будь-яке лікування інфекційних захворювань. Здоров’я Вам та Вашим вихованцям.
+
+    <p class="break-word">Процедура вакцинації здійснюється у ветклініці. Її проведенню передує огляд вихованця та вивчення медичної картки вихованця. Якщо тварина здорова (активна, має нормальний апетит, температура тіла в межах норми і т.д.), то вихованець може отримати вакцину. Якщо ж ветеринар (Харків) виявив ознаки будь-якого захворювання, необхідно додатково обстеження і лікування. В даному випадку вакцинацію відкладають до одужання вихованця.
+
+    <p class="break-word">У нашій клініці Ви можете виконати вакцинацію своїх вихованців. Для цього використовуються якісні препарати Нобівак, Феліген, Біофел, Фелоцел. Ветеринар допоможе підібрати вакцину, яка підійде саме Вашому вихованцю.</p>
+
+    <figure>
+        <img src="C:/Users/User/Desktop/Olesya/Веб/ветеринар.jpg" 
+        alt="Наш лікар Петро Претрович">
+        <figcaption>Наші спеціалісти завжди готові допомогти вашим улюбленцям</figcaption>
+    </figure>
+
+    <footer>
+        <p>Ветеринарна клініка "Лапка", 2024<sup>©</sup></p>
+    </footer>
+ <script src="script3.js"></script>
+
+</body>
+</html>
